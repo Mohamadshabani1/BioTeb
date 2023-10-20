@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tabs.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <title>BioMed-Anatomy</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="brand">BioMed</a>
+        <div class="menu-btn">
+    
+        </div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="homeen.html">Home</a>
+                <!--<a href="#">About</a>-->
+                <a href="#">Anatomy</a>
+                <a href="#">Diseasses</a>
+                <a href="#">First Aid</a>
+                <a href="#">Contact</a>                <a href="homear.html">العربية</a>
+            </div>
+        </div>
+        </header>
+        <section id="blog">
+            <div class="blog-heading">
+                <strong>Anatomy</strong>
+                <h3>BioMed Anatomy</h3>
+            </div>
+
+
+
+
+            <div class="search">
+                <input type="text" class="searchTerm" id="searchInput" placeholder="What are you looking for?">
+                <button type="button" class="searchButton" onclick="search()">
+                    <i class="fas fa-search"></i> <!-- Use "fas" for solid style icons -->
+                </button>
+            </div>
+
+
+
+            <div class="container">
+                
+                <!--<div class="search">
+                    <input type="text" class="searchTerm" id="searchInput" placeholder="What are you looking for?">
+                    <button type="button" class="searchButton" onclick="search()">
+                        <i class="fas fa-search"></i> <!-- Use "fas" for solid style icons -->
+                    <!--</button>
+                </div>-->
+
+
+
+            <div class="blog-box-container">
+                <div class="searchable-element">
+                <div class="blog-box">
+                  <div class="blog-box-img">
+                    <img src="Gi BioMED.jpeg" alt>
+                    <a href="#" class="blog-img-link">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                  </div>
+                <div class="blog-box-text"></div>
+                   <strong>Digestive system</strong>
+                   <a href="#">Lorem ipsum dolor sit Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore aspernatur minima assumenda illum. Iure nam iste aliquid consectetur temporibus soluta et praesentium</a>
+                </div>    
+                </div>
+
+
+                <div class="searchable-element">
+                <div class="blog-box">
+                    <div class="blog-box-img">
+                      <img src="digestive-system-640-x-340.jpg" alt>
+                      <a href="#" class="blog-img-link">
+                          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                      </a>
+                    </div>
+                  <div class="blog-box-text"></div>
+                     <strong>Gi system</strong>
+                     <a href="#">Lorem ipsum dolor sit Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore aspernatur minima assumenda illum. Iure nam iste aliquid consectetur temporibus soluta et praesentium</a>
+                  </div>  
+                  </div>
+
+                  <div class="searchable-element">
+                  <div class="blog-box">
+                    <div class="blog-box-img">
+                      <img src="Gi general idea.jpg" alt>
+                      <a href="#" class="blog-img-link">
+                          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                      </a>
+                    </div>
+                  <div class="blog-box-text"></div>
+                     <strong>Digestive system</strong>
+                     <a href="#">Lorem ipsum dolor sit Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore aspernatur minima assumenda illum. Iure nam iste aliquid consectetur temporibus soluta et praesentium</a>
+                  </div>  
+                  </div>
+
+
+
+
+
+
+            </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script type="text/javascript">
+
+            const menuBtn = document.querySelector(".menu-btn");
+            const navigation = document.querySelector(".navigation");
+    
+            menuBtn.addEventListener("click", () => {
+               menuBtn.classList.toggle("active");
+               navigation.classList.toggle("active");
+            });
+    
+    
+    
+            const btns = document.querySelectorAll(".nav-btn");
+            const slides = document.querySelectorAll(".video-slide");
+            const contents = document.querySelectorAll(".content");
+    
+    
+            var sliderNav = function(manual){
+                btns.forEach((btn) =>{
+                    btn.classList.remove("active");
+                });
+    
+    
+                slides.forEach((slide) =>{
+                    slide.classList.remove("active");
+                });
+    
+                contents.forEach((content) =>{
+                    content.classList.remove("active");
+                });
+    
+    
+                btns[manual].classList.add("active");
+                slides[manual].classList.add("active");
+                contents[manual].classList.add("active");
+            }
+    
+            btns.forEach((btn, i) => {
+                btn.addEventListener("click", () => {
+                    sliderNav(i);
+                });
+            });
+        </script>
+        <script src="https://kit.fontawesome.com/65ec5fb467.js" crossorigin="anonymous"></script>
+        
+        
+        
+        
+
+
+
+
+
+        <!--Search js-->
+        <script>
+            function search() {
+                // Get the input value
+                var searchInput = document.getElementById('searchInput').value.toLowerCase();
+    
+                // Get all elements that you want to search through
+                var elementsToSearch = document.querySelectorAll('.searchable-element');
+    
+                // Loop through each element
+                elementsToSearch.forEach(function (element) {
+                    // Check if the element's text content contains the search input
+                    if (element.textContent.toLowerCase().includes(searchInput)) {
+                        // Show the element if it matches the search
+                        element.style.display = 'block';
+                    } else {
+                        // Hide the element if it doesn't match the search
+                        element.style.display = 'none';
+                    }
+                });
+            }
+        </script>
+
+
+<script>
+    function search() {
+        var searchInput = document.getElementById('searchInput').value.toLowerCase();
+        var elementsToSearch = document.querySelectorAll('.searchable-element');
+
+        elementsToSearch.forEach(function (element) {
+            if (element.textContent.toLowerCase().includes(searchInput)) {
+                element.style.display = 'block';
+            } else {
+                element.style.display = 'none';
+            }
+        });
+    }
+</script>
+
+        <!--Search css-->
+
+        <style>
+
+
+
+
+        .search {
+            width: 100%;
+            position: relative;
+            display: flex;
+            margin: auto;
+            margin: 20px;
+        }
+
+        .searchTerm {
+            width: 100%;
+            border: 3px solid #000000;
+            border-right: none;
+            padding: 5px;
+            height: 20px;
+            border-radius: 5px 0 0 5px;
+            outline: none;
+            color: #9DBFAF;
+            width: 400px;
+            height: 36px;
+        }
+
+        .searchTerm:focus {
+            color: #00B4CC;
+        }
+
+        .searchButton {
+            width: 40px;
+            height: 36px;
+            border: 1px solid #00B4CC;
+            background: #00B4CC;
+            text-align: center;
+            color: #fff;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+
+        
+        </style>
+
+
+
+
+
+    </body>
+</html>

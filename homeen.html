@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <title>BioMed-Home</title>
+</head>
+<body>
+
+    <header>
+    <a href="#" class="brand">BioMed</a>
+    <div class="menu-btn">
+
+    </div>
+    <div class="navigation">
+        <div class="navigation-items">
+            <a href="homeen.html">Home</a>
+            <!--<a href="#">About</a>-->
+            <a href="tabs.html">Anatomy</a>
+            <a href="#">Diseasses</a>
+            <a href="#">First Aid</a>
+            <a href="#">Contact</a>
+            <a href="homear.html">العربية</a>
+        </div>
+    </div>
+    </header>
+
+    <section class="home">
+        <video class="video-slide active" src="Untitled video - Made with Clipchamp (1).mp4" autoplay muted loop></video>
+        <video class="video-slide" src="Untitled video - Made with Clipchamp (3).mp4" autoplay muted loop></video>
+        <video class="video-slide" src="Untitled video - Made with Clipchamp (4).mp4" autoplay muted loop></video>
+        <video class="video-slide" src="Untitled video - Made with Clipchamp (6).mp4" autoplay muted loop></video>
+        <video class="video-slide" src="Untitled video - Made with Clipchamp (3).mp4" autoplay muted loop></video>
+        <div class="content active">
+            <h1>Medicine<br><span>& Biology</span></h1>
+            <p>Medicine and biology collaborate to decode life's mysteries and drive healthcare innovation. From genes to groundbreaking treatments, their partnership shapes a future of personalized and advanced well-being.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="content">
+            <h1>BioMed<br><span>Anatomy</span></h1>
+            <p>Anatomy is the roadmap to the body's intricacies, revealing the arrangement of organs and systems. This study forms the basis for precise medical interventions, allowing healthcare professionals to navigate the complexities of health and illness with precision.</p>
+            <a href="tabs.html">Read More</a>
+        </div>    
+        <div class="content">
+            <h1>BioMed<br><span><div class="patho">Pathology</div></span></h1>
+            <p>Pathology, a vital field in medicine, investigates diseases at the cellular and organ levels. By deciphering the roots of illnesses, pathologists enable precise diagnoses and effective treatments, elevating the standard of patient care.</p>
+            <a href="#anatomyen">Read More</a>
+        </div>
+        <div class="content">
+            <h1>First<br><span>Aid</span></h1>
+            <p>Explore essential First Aid on our website. From basic wound care to life-saving techniques, our comprehensive guide empowers you with the knowledge and skills to respond effectively in emergencies. Be prepared, stay informed, and make a difference in critical moments.</p>
+            <a href="#anatomyen">Read More</a>
+        </div>
+        <div class="content">
+            <h1>Some<br><span>Thing</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non asperiores deserunt alias quasi, eveniet cum ea quam inventore ullam nobis quis adipisci nisi provident in, voluptatum ipsam at saepe suscipit!</p>
+            <a href="#anatomyen">Read More</a>
+        </div>
+        <div class="media-icons">
+            <a href="#"> <i class="fab fa-facebook-f"></i></a>
+            <a href="#"> <i class="fab fa-instagram"></i></a>
+            <a href="#"> <i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="slider-navigation">
+            <div class="nav-btn active"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+
+        const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+
+        menuBtn.addEventListener("click", () => {
+           menuBtn.classList.toggle("active");
+           navigation.classList.toggle("active");
+        });
+
+
+
+        const btns = document.querySelectorAll(".nav-btn");
+        const slides = document.querySelectorAll(".video-slide");
+        const contents = document.querySelectorAll(".content");
+
+
+        var sliderNav = function(manual){
+            btns.forEach((btn) =>{
+                btn.classList.remove("active");
+            });
+
+
+            slides.forEach((slide) =>{
+                slide.classList.remove("active");
+            });
+
+            contents.forEach((content) =>{
+                content.classList.remove("active");
+            });
+
+
+            btns[manual].classList.add("active");
+            slides[manual].classList.add("active");
+            contents[manual].classList.add("active");
+        }
+
+        btns.forEach((btn, i) => {
+            btn.addEventListener("click", () => {
+                sliderNav(i);
+            });
+        });
+    </script>
+</body>
+</html>

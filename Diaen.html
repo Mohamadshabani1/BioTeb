@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Diaen.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <title>BioMed-Diabetes</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="brand">BioMed</a>
+        <div class="menu-btn">
+    
+        </div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="homeen.html">Home</a>
+                <!--<a href="#">About</a>-->
+                <a href="tabs.html">Anatomy</a>
+                <a href="#">Diseasses</a>
+                <a href="#">First Aid</a>
+                <a href="#">Contact</a>
+                <a href="homear.html">العربية</a>
+            </div>
+        </div>
+        </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script type="text/javascript">
+
+            const menuBtn = document.querySelector(".menu-btn");
+            const navigation = document.querySelector(".navigation");
+    
+            menuBtn.addEventListener("click", () => {
+               menuBtn.classList.toggle("active");
+               navigation.classList.toggle("active");
+            });
+    
+    
+    
+            const btns = document.querySelectorAll(".nav-btn");
+            const slides = document.querySelectorAll(".video-slide");
+            const contents = document.querySelectorAll(".content");
+    
+    
+            var sliderNav = function(manual){
+                btns.forEach((btn) =>{
+                    btn.classList.remove("active");
+                });
+    
+    
+                slides.forEach((slide) =>{
+                    slide.classList.remove("active");
+                });
+    
+                contents.forEach((content) =>{
+                    content.classList.remove("active");
+                });
+    
+    
+                btns[manual].classList.add("active");
+                slides[manual].classList.add("active");
+                contents[manual].classList.add("active");
+            }
+    
+            btns.forEach((btn, i) => {
+                btn.addEventListener("click", () => {
+                    sliderNav(i);
+                });
+            });
+        </script>
+        <script src="https://kit.fontawesome.com/65ec5fb467.js" crossorigin="anonymous"></script>
+        
+
+</body>
+</html>

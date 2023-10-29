@@ -19,12 +19,17 @@ header{
     transition: 0.5s ease;
 }
 
+.content{
+    margin-right: 50px;
+}
+
 header .brand{
     color: #ffffff;
-    font-size: 1.5em;
+    font-size: 1.7em;
     font-weight: 600;
     text-transform: uppercase;
     text-decoration: none;
+    font-family: 'Scheherazade New';
 }
 
 header .navigation{
@@ -171,9 +176,10 @@ p{
     height: 12px;
     background: #fff;
     border-radius: 50%;
-    cursor: pointer;
+    cursor: pointer; /*pointer*/
     box-shadow: 0 0 2px rgba(186, 173, 173, 0.5);
     transition: 0.3s ease;
+    margin-right: 30px;
 }
 
 .slider-navigation .nav-btn.active{
@@ -203,7 +209,7 @@ p{
     filter: brightness(0.5);
 }
 
-@media (max-width: 1040px){
+@media (max-width: 1170px){
     header{
         z-index: 999;
         position: absolute;

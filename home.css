@@ -25,6 +25,7 @@ header .brand{
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
+    letter-spacing: 2px;
 }
 
 header .navigation{
@@ -286,6 +287,10 @@ section{
         letter-spacing: 5px;
         line-height: 75px;
         margin-bottom: 40px;
+    }
+
+    .home .content h1 span{
+        font-size: 1em;
     }
 
 }

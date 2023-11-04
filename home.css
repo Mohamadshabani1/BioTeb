@@ -185,8 +185,6 @@ section{
     transform: scale(1.2);
 }
 
-
-
 .video-slide{
     position: absolute;
     width: 100%;
@@ -200,7 +198,7 @@ section{
     filter: brightness(0.5);
 }
 
-@media (max-width: 1040px){
+@media (max-width: 1100px){
     header{
         z-index: 999;
         position: absolute;
@@ -295,9 +293,18 @@ section{
 
 }
 
-@media(max-width:355px){
+@media(max-width:460px){
+    #abdo{
+        font-size: 3rem;
+    }
+}
+
+@media(max-width:365px){
     .home .content h1{
         font-size: 3.4rem;
         font-weight: 900;
+    }
+    #abdo{
+        font-size: 2.4rem;
     }
 }

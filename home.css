@@ -263,7 +263,7 @@ section{
     }
 
     .menu-btn{
-        background: url(clipart3035828.png)no-repeat;
+        background: url(icons8-menu-32.png)no-repeat;
         background-size: 30px;
         background-position: center;
         width: 40px;
@@ -293,4 +293,11 @@ section{
         font-size: 1em;
     }
 
+}
+
+@media(max-width:355px){
+    .home .content h1{
+        font-size: 3.4rem;
+        font-weight: 900;
+    }
 }

@@ -337,6 +337,10 @@ ul{
     list-style: none;
 }
 
+audio{
+  margin: auto;
+  object-fit: contain;
+}
   
   
   @media (max-width:1150px){
@@ -588,7 +592,7 @@ ul{
   }
 
   .title{
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 
@@ -598,7 +602,7 @@ ul{
   }
 
   .title{
-    font-size: 1.3rem;
+    font-size: 2rem;
   }
 }
 
@@ -608,7 +612,7 @@ ul{
   }
 
   .title{
-    font-size: 1.2rem;
+    font-size: 1.7em;
     padding-right: 0;
   }
 }
@@ -651,7 +655,7 @@ ul{
 
 @media (max-width:374px){
   .title{
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     padding-left: 0;
   }
 }
@@ -662,7 +666,7 @@ ul{
   }
 
   .title{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     padding-left: 0;
   }
 
@@ -731,7 +735,7 @@ ul{
 
   .pan-img img{
     width: 15.5rem;
-    height: 15rem;
+    height: 13rem;
   }
 
   .yt-vid iframe{
@@ -748,8 +752,8 @@ ul{
   }
 
   .pan-img img{
-    width: 13rem;
-    height: 15rem;
+    width: 14rem;
+    height: 11rem;
   }
 
   .yt-vid iframe{
@@ -766,8 +770,8 @@ ul{
   }
 
   .pan-img img{
-    width: 12rem;
-    height: 9rem;
+    width: 19rem;
+    height: 13rem;
   }
 
   .yt-vid iframe{

@@ -337,6 +337,10 @@ ul{
     list-style: none;
 }
 
+audio{
+  margin: auto;
+  object-fit: contain;
+}
   
   
   @media (max-width:1150px){
@@ -731,7 +735,7 @@ ul{
 
   .pan-img img{
     width: 15.5rem;
-    height: 15rem;
+    height: 10rem;
   }
 
   .yt-vid iframe{
@@ -749,12 +753,12 @@ ul{
 
   .pan-img img{
     width: 13rem;
-    height: 15rem;
+    height: 10rem;
   }
 
   .yt-vid iframe{
     width: 17rem;
-    height: 14rem;
+    height: 10rem;
   }
 }
 
@@ -773,6 +777,10 @@ ul{
   .yt-vid iframe{
     width: 17rem;
     height: 14rem;
+  }
+
+  audio{
+    width: 12rem;
   }
 }
 

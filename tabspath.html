@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tabspath.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="BIOTEB_favicon-removebg-preview (1).ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <title>BioTeb-Pathology</title>
+</head>
+<body>
+     <header>
+        <a href="index.html" class="brand">BioTeb</a>
+        <div class="menu-btn">
+    
+        </div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="index.html">Home</a>
+                <!--<a href="#">About</a>-->
+                <a href="#">Anatomy & Physiology</a>
+                <a href="#">Pathology</a>
+                <a href="#">First Aid</a>
+                <a href="#">Contact</a>
+                <a href="tabsar.html">العربية</a>
+            </div>
+        </div>
+     </header>
+        <section id="blog">
+            <div class="blog-heading">
+                <strong>BioTeb</strong>
+                <h3>Pathology</h3>
+            </div>
+
+
+
+
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search..." onkeydown="if (event.key === 'Enter') search()">
+                <button onclick="search()">Search</button>
+            </div>
+
+            <div class="blog-box-container">
+
+                <div class="searchable-element">
+                <div class="blog-box">
+                  <div class="blog-box-img">
+                    <img src="Panceras (1) (1).png" alt>
+                    <a href="Pancreasen.html" class="blog-img-link">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                  </div>
+                <div class="blog-box-text"></div>
+                   <strong>Diabetes</strong>
+                   <a href="Pancreasen.html">Discover the key to metabolic and digestive balance with insights on the pancreas! From regulating blood
+                     sugar with insulin and glucagon to producing essential digestive enzymes, explore the vital role of this organ.</a>
+                </div>   
+                </div> 
+
+
+
+                <div class="searchable-element">
+                <div class="blog-box">
+                    <div class="blog-box-img">
+                      <img src="digestive-system-640-x-340.jpg" alt>
+                      <a href="#" class="blog-img-link">
+                          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                      </a>
+                    </div>
+                  <div class="blog-box-text"></div>
+                     <strong>Digestive system</strong>
+                     <a href="#">Lorem ipsum dolor sit Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore aspernatur minima assumenda illum. Iure nam iste aliquid consectetur temporibus soluta et praesentium</a>
+                  </div>  
+                  </div>
+
+
+                  <div class="searchable-element">
+                  <div class="blog-box">
+                    <div class="blog-box-img">
+                      <img src="Gi general idea.jpg" alt>
+                      <a href="#" class="blog-img-link">
+                          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                      </a>
+                    </div>
+                  <div class="blog-box-text"></div>
+                     <strong>Digestive system</strong>
+                     <a href="#">Lorem ipsum dolor sit Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore aspernatur minima assumenda illum. Iure nam iste aliquid consectetur temporibus soluta et praesentium</a>
+                  </div>  
+                  </div>
+
+ 
+            </div>
+        </section>
+
+
+
+
+
+        <!--Footer-->
+
+        
+          <footer>
+            <div class="footercontainer">
+                <div class="socialicons">
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-tiktok"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="footerNav">
+                    <ul>
+                        <li><a href="homeen.html">Home</a></li>
+                        <li><a href="">Anatomy</a></li>
+                        <li><a href="">Pathology</a></li>
+                        <li><a href="">First Aid</a></li>
+                    </ul>
+                </div>
+                <div class="footerBottom">
+                    <p>Copyright &copy;2023 <span class="Bm">BioMed</span><span class="Ms"> Mohamad Shabani</span></p>
+                </div>
+            </div>
+          </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script type="text/javascript">
+
+            const menuBtn = document.querySelector(".menu-btn");
+            const navigation = document.querySelector(".navigation");
+    
+            menuBtn.addEventListener("click", () => {
+               menuBtn.classList.toggle("active");
+               navigation.classList.toggle("active");
+            });
+    
+    
+    
+            const btns = document.querySelectorAll(".nav-btn");
+            const slides = document.querySelectorAll(".video-slide");
+            const contents = document.querySelectorAll(".content");
+    
+    
+            var sliderNav = function(manual){
+                btns.forEach((btn) =>{
+                    btn.classList.remove("active");
+                });
+    
+    
+                slides.forEach((slide) =>{
+                    slide.classList.remove("active");
+                });
+    
+                contents.forEach((content) =>{
+                    content.classList.remove("active");
+                });
+    
+    
+                btns[manual].classList.add("active");
+                slides[manual].classList.add("active");
+                contents[manual].classList.add("active");
+            }
+    
+            btns.forEach((btn, i) => {
+                btn.addEventListener("click", () => {
+                    sliderNav(i);
+                });
+            });
+        </script>
+
+        <!--Search bar js-->
+
+        <script>
+            function search() {
+                // Get the input value
+                var searchInput = document.getElementById('searchInput').value.toLowerCase();
+    
+                // Get all elements that you want to search through
+                var elementsToSearch = document.querySelectorAll('.searchable-element');
+    
+                // Loop through each element
+                elementsToSearch.forEach(function (element) {
+                    // Check if the element's text content contains the search input
+                    if (element.textContent.toLowerCase().includes(searchInput)) {
+                        // Show the element if it matches the search
+                        element.style.display = 'block';
+                    } else {
+                        // Hide the element if it doesn't match the search
+                        element.style.display = 'none';
+                    }
+                });
+            }
+        </script>
+
+
+
+
+
+
+
+        <script src="https://kit.fontawesome.com/65ec5fb467.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -106,10 +106,12 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 2rem;
   }
 
   .pan-img img{
     vertical-align: middle;
+    height: 17rem;
   }
 
   .text-explain h1{
@@ -343,6 +345,12 @@ audio{
 }
   
   
+@media(max-width:900px){
+  .content{
+    flex-direction: column;
+    align-items: center; /*I use align items not justify content because it is a column*/
+  }
+}
   @media (max-width:1150px){
     header{
       padding: 12px 20px;
@@ -369,10 +377,6 @@ audio{
     }
     .main-content h3{
       font-size: 1.6em;
-    }
-    .content{
-      flex-direction: column;
-      align-items: center; /*I use align items not justify content because it is a column*/
     }
     .card {
       background-color: white;
@@ -409,9 +413,18 @@ audio{
   }
 
 
+@media(max-width:1200px){
+  .text-explain h1{
+    padding-left: 7rem;
+    padding-right: 0rem;
+    font-size: 1.8rem;
+  }
 
-
-
+  .text-explain h2{
+    padding-left: 7rem;
+    padding-right: 4rem;
+  }
+}
 
 
 
@@ -525,7 +538,7 @@ audio{
 
 @media (max-width: 1024px){
   .text-explain h1{
-    padding-left: 6rem;
+    padding-left: 7rem;
     padding-right: 0rem;
     font-size: 1.7rem;
   }
@@ -548,9 +561,6 @@ audio{
     padding-right: 4rem;
   }
 
-  .pan-img img{
-    width: 39rem;
-  }
 
   .yt-vid iframe{
     width: 30rem;
@@ -570,9 +580,6 @@ audio{
     padding-right: 4rem;
   }
 
-  .pan-img img{
-    width: 37rem;
-  }
 
   .yt-vid iframe{
     width: 30rem;
@@ -580,16 +587,10 @@ audio{
   }
 }
 
-@media (max-width:595px){
-  .pan-img img{
-    width: 33rem;
-  }
-}
+
 
 @media (max-width:538px){
-  .pan-img img{
-    width: 30rem;
-  }
+
 
   .title{
     font-size: 1.5rem;
@@ -598,7 +599,7 @@ audio{
 
 @media (max-width:480px){
   .pan-img img{
-    width: 28rem;
+    height: 15rem;
   }
 
   .title{
@@ -608,7 +609,7 @@ audio{
 
 @media (max-width:450px){
   .pan-img img{
-    width: 25rem;
+    height: 12rem;
   }
 
   .title{
@@ -636,10 +637,6 @@ audio{
 }
 
 @media (max-width:400px){
-  .pan-img img{
-    width: 23rem;
-  }
-
   .text-explain h1{
     padding-left: 2rem;
     padding-right: 0rem;
@@ -661,9 +658,6 @@ audio{
 }
 
 @media (max-width:370px){
-  .pan-img img{
-    width: 18rem;
-  }
 
   .title{
     font-size: 1.2rem;
@@ -706,9 +700,6 @@ audio{
     width: 100%;
   }
 
-  .pan-img img{
-    width: 18rem;
-  }
 
   .title{
     font-size: 1rem;
@@ -733,10 +724,6 @@ audio{
     font-size: 1.8rem;
   }
 
-  .pan-img img{
-    width: 15.5rem;
-    height: 10rem;
-  }
 
   .yt-vid iframe{
     width: 17rem;
@@ -751,10 +738,6 @@ audio{
     font-size: 1.8rem;
   }
 
-  .pan-img img{
-    width: 13rem;
-    height: 10rem;
-  }
 
   .yt-vid iframe{
     width: 17rem;
@@ -769,10 +752,6 @@ audio{
     font-size: 1.8rem;
   }
 
-  .pan-img img{
-    width: 12rem;
-    height: 9rem;
-  }
 
   .yt-vid iframe{
     width: 17rem;

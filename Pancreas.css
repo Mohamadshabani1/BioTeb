@@ -370,10 +370,6 @@ audio{
     .main-content h3{
       font-size: 1.6em;
     }
-    .content{
-      flex-direction: column;
-      align-items: center; /*I use align items not justify content because it is a column*/
-    }
     .card {
       background-color: white;
       width: 20.25em;
@@ -411,7 +407,19 @@ audio{
 
 
 
-
+  @media(max-width:1200px){
+    .text-explain h1{
+      padding-left: 7rem;
+      padding-right: 0rem;
+      font-size: 1.8rem;
+    }
+  
+    .text-explain h2{
+      padding-left: 7rem;
+      padding-right: 4rem;
+    }
+  }
+  
 
 
 
@@ -525,7 +533,7 @@ audio{
 
 @media (max-width: 1024px){
   .text-explain h1{
-    padding-left: 6rem;
+    padding-left: 7rem;
     padding-right: 0rem;
     font-size: 1.7rem;
   }
@@ -695,6 +703,12 @@ audio{
 @media (max-width:350){
   .card{
     width: 17.25;
+  }
+}
+@media(max-width:900px){
+  .content{
+    flex-direction: column;
+    align-items: center; /*I use align items not justify content because it is a column*/
   }
 }
 

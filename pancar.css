@@ -370,10 +370,6 @@ audio{
     .main-content h3{
       font-size: 1.6em;
     }
-    .content{
-      flex-direction: column;
-      align-items: center; /*I use align items not justify content because it is a column*/
-    }
     .card {
       background-color: white;
       width: 20.25em;
@@ -504,6 +500,13 @@ audio{
         margin-bottom: 40px;
     }
 
+}
+
+@media(max-width:900px){
+  .content{
+    flex-direction: column;
+    align-items: center; /*I use align items not justify content because it is a column*/
+  }
 }
 
 @media (max-width: 488px){

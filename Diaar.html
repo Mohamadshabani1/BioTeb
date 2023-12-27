@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Diaar.css">
+    <title>بَيوطِبّ-داءُالسُّكريّ</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="BIOTEB_favicon-removebg-preview (1).ico">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Scheherazade+New&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <a href="homear.html" class="brand">بَيوطِبّ</a>
+        <div class="menu-btn">
+    
+        </div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="homear.html">الرئيسية</a>
+                <!--<a href="#">About</a>-->
+                <a href="tabsar.html">علم وظائف الأعضاء و التشريح</a>
+                <a href="tabspath.html">علم الأمراض</a>
+                <a href="#">الاسعافات الأولية</a>
+                <a href="contatar.html">تواصل معنا</a>
+                <a href="Pancreasen.html">English</a>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="main">
+        <div class="blog-heading">
+            <strong style="font-family: 'Scheherazade New'; font-weight: 700;">بَيوطِبّ</strong>
+            <h3>داءُ السُّكريّ</h3>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="footercontainer">
+            <div class="socialicons">
+                <a href="https://www.instagram.com/biotebofficial/"><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-tiktok"></i></a>
+                <a href="https://twitter.com/BioTebOfficial"><i class="fab fa-x-twitter"></i></a>
+            </div>
+            <div class="footerNav">
+                <ul>
+                    <li><a href="homear.html">Home</a></li>
+                    <li><a href="tabsar.html">Anatomy</a></li>
+                    <li><a href="">Pathology</a></li>
+                    <li><a href="">First Aid</a></li>
+                </ul>
+            </div>
+            <div class="footerBottom">
+                <p>Copyright &copy;2023 <span class="Bm">BioMed</span><span class="Ms"> Mohamad Shabani</span></p>
+            </div>
+        </div>
+      </footer>
+
+
+
+
+
+
+
+
+
+
+      <script src="https://kit.fontawesome.com/65ec5fb467.js" crossorigin="anonymous"></script>
+
+      <script type="text/javascript">
+
+        const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+
+        menuBtn.addEventListener("click", () => {
+           menuBtn.classList.toggle("active");
+           navigation.classList.toggle("active");
+        });
+
+
+
+        const btns = document.querySelectorAll(".nav-btn");
+        const slides = document.querySelectorAll(".video-slide");
+        const contents = document.querySelectorAll(".content");
+
+
+        var sliderNav = function(manual){
+            btns.forEach((btn) =>{
+                btn.classList.remove("active");
+            });
+
+
+            slides.forEach((slide) =>{
+                slide.classList.remove("active");
+            });
+
+            contents.forEach((content) =>{
+                content.classList.remove("active");
+            });
+
+
+            btns[manual].classList.add("active");
+            slides[manual].classList.add("active");
+            contents[manual].classList.add("active");
+        }
+
+        btns.forEach((btn, i) => {
+            btn.addEventListener("click", () => {
+                sliderNav(i);
+            });
+        });
+    </script>
+</body>
+</html>

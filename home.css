@@ -61,6 +61,13 @@ section{
     padding: 100px 200px;
 }
 
+
+
+
+
+
+
+
 .home{
     position: relative;
     width: 100%;
@@ -71,6 +78,18 @@ section{
     background: #525784;
 }
 /*#969abe  #525784*/
+
+
+
+
+
+
+
+
+
+
+
+
 
 .home:before{
     z-index: 777;

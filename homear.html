@@ -24,7 +24,7 @@
         <div class="navigation-items">
             <!--<a href="#">About</a>-->
             <a href="tabsar.html" style="padding-right: 20px;">علم التشريح و وظائف الأعضاء</a>
-            <a href="tabspath.html">علم الأمراض</a>
+            <a href="tabspathar.html">علم الأمراض</a>
             <a href="#">الاسعافات الأولية</a>
             <a href="contatar.html">تواصل معنا</a>
             <a href="index.html">English</a>
@@ -33,11 +33,10 @@
     </header>
 
     <section class="home">
-        <video class="video-slide active" src="BioTeb-Video1.mp4" autoplay muted loop poster="BioTeb-Pic1.png"></video> <!--Untitled video - Made with Clipchamp (11).mp4-->
+        <video class="video-slide active" src="Video1 - alt.mp4" autoplay muted loop poster="BioTeb-Pic1.png"></video> <!--Untitled video - Made with Clipchamp (11).mp4-->
         <video class="video-slide" src="BioTeb-Video2.mp4" autoplay muted loop poster="BioTeb-Pic2.png"></video>
         <video class="video-slide" src="BioTeb-Video3.mp4" autoplay muted loop poster="BioTeb-Pic3.png"></video>
         <video class="video-slide" src="BioTeb-Video4.mp4" autoplay muted loop poster="BioTeb-Pic4.png"></video>
-        <video class="video-slide" src="#" autoplay muted loop></video>
         <div class="content active">
             <h1>الطّب<br><span>و علم الأحياء</span></h1>
             <p>يتيح الطب فهماً عميقًا لتشخيص ومعالجة الأمراض، بينما يساهم علم الأحياء في الكشف عن أسرار تركيب الجسم وتفاعلاته. يجمع الموقع بين هذين المجالين لتوفير معلومات شاملة وموثوقة تدعم التوعية الصحية وتسهم في تطوير العلاجات الابتكارية.</p>
@@ -68,8 +67,20 @@
             <div class="nav-btn"></div>
             <div class="nav-btn"></div>
             <div class="nav-pro"><div class="nav-btn"></div></div>
-
         </div>
+
+
+
+
+                <!----->
+
+                <button id="scrollButton" onclick="scrollToBottom()"><i class="fas fa-arrow-down"></i></button>
+
+                <!---->
+
+        
+
+
     </section>
 
     <script type="text/javascript">
@@ -114,6 +125,42 @@
                 sliderNav(i);
             });
         });
+
+
+
+
+
+                /*Start Of test*/
+
+                const scrollButton = document.getElementById("scrollButton");
+
+window.onscroll = function() {
+    // Calculate how far the user has scrolled
+    const scrollHeight = document.documentElement.scrollHeight;
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+    const windowHeight = window.innerHeight;
+
+    // Set a threshold value (you can adjust this based on your preference)
+    const threshold = 5;
+
+    // Check if the user is close to the bottom
+    if (scrollHeight - scrollTop - windowHeight < threshold) {
+        scrollButton.style.display = "none"; // Hide the button
+    } else {
+        scrollButton.style.display = "block"; // Show the button
+    }
+};
+
+// Function to scroll to the bottom of the page
+function scrollToBottom() {
+    document.body.scrollTop = document.body.scrollHeight; // For Safari
+    document.documentElement.scrollTop = document.documentElement.scrollHeight; // For Chrome, Firefox, IE, and Opera
+}
+
+
+        /*End of Test*/
+
+
     </script>
 </body>
 </html>

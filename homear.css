@@ -172,8 +172,8 @@ p{
 }
 
 .slider-navigation .nav-btn{
-    width: 12px;
-    height: 12px;
+    width: 20px;
+    height: 20px;
     background: #fff;
     border-radius: 50%;
     cursor: pointer; /*pointer*/
@@ -183,7 +183,7 @@ p{
 }
 
 .slider-navigation .nav-btn.active{
-    background: #b0a1a1;
+    background: #8b8383;
 }
 
 .slider-navigation .nav-btn:not(:last-child){
@@ -299,3 +299,52 @@ p{
     }
 
 }
+
+
+
+
+#scrollButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 10px; /*20*/
+    background-color: #f9f9f9;
+    color: #222;
+    border: none;
+    border-radius: 50%; /* Make it a circle */
+    width: 50px; /* Adjust the size as needed */
+    height: 50px;
+    font-size: 24px; /* Adjust the arrow size */
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  @media only screen and (max-width: 767px) {
+    #scrollButton {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    #scrollButton {
+        display: block;
+    }
+} 
+
+@media(max-height:575px){
+    #scrollButton {
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

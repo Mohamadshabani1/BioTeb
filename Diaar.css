@@ -106,10 +106,12 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 2rem;
   }
 
   .pan-img img{
     vertical-align: middle;
+    height: 17rem;
   }
 
   .text-explain h1{
@@ -342,7 +344,6 @@ audio{
   object-fit: contain;
 }
   
-  
   @media (max-width:1150px){
     header{
       padding: 12px 20px;
@@ -411,7 +412,7 @@ audio{
 
 
 
-@media (max-width: 1040px){
+@media (max-width: 1300px){ /*1040*/
     header{
         z-index: 999;
         position: fixed;
@@ -551,9 +552,9 @@ audio{
     padding-left: 4rem;
   }
 
-  .pan-img img{
+  /* .pan-img img{
     width: 39rem;
-  }
+  } */
 
   .yt-vid iframe{
     width: 30rem;
@@ -573,9 +574,9 @@ audio{
     padding-left: 4rem;
   }
 
-  .pan-img img{
+  /* .pan-img img{
     width: 37rem;
-  }
+  } */
 
   .yt-vid iframe{
     width: 30rem;
@@ -584,15 +585,15 @@ audio{
 }
 
 @media (max-width:595px){
-  .pan-img img{
+  /* .pan-img img{
     width: 33rem;
-  }
+  } */
 }
 
 @media (max-width:538px){
-  .pan-img img{
+  /* .pan-img img{
     width: 30rem;
-  }
+  } */
 
   .title{
     font-size: 2rem;
@@ -600,9 +601,9 @@ audio{
 }
 
 @media (max-width:480px){
-  .pan-img img{
+  /* .pan-img img{
     width: 28rem;
-  }
+  } */
 
   .title{
     font-size: 2rem;
@@ -610,9 +611,9 @@ audio{
 }
 
 @media (max-width:450px){
-  .pan-img img{
+  /* .pan-img img{
     width: 25rem;
-  }
+  } */
 
   .title{
     font-size: 1.7em;
@@ -639,9 +640,9 @@ audio{
 }
 
 @media (max-width:400px){
-  .pan-img img{
+  /* .pan-img img{
     width: 23rem;
-  }
+  } */
 
   .text-explain h1{
     padding-right: 2rem;

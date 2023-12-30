@@ -423,7 +423,7 @@ audio{
 
 
 
-@media (max-width: 1040px){
+@media (max-width: 1300px){
     header{
         z-index: 999;
         position: fixed;

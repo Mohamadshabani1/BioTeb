@@ -46,6 +46,7 @@ header .navigation .navigation-items a{
     transition: 0.3 ease;
 }
 
+
 header .navigation .navigation-items a:before{
     content: '';
     position: absolute;
@@ -429,7 +430,7 @@ audio{
 
 
 
-@media (max-width: 1040px){
+@media (max-width: 1300px){
     header{
         z-index: 999;
         position: fixed;

@@ -178,14 +178,17 @@ function scrollToBottom() {
         // Function to handle touch move
         function handleTouchMove(event) {
             if (!isSwipeInProgress) {
-                if (event.touches[0].clientX - touchStartX > 50) {
-                    // Swipe left
-                    isSwipeInProgress = true;
-                    goToSlide("prev");
-                } else if (touchStartX - event.touches[0].clientX > 50) {
+                const touchX = event.touches[0].clientX;
+                const swipeThreshold = 50;
+
+                if (touchStartX - touchX > swipeThreshold) {
                     // Swipe right
                     isSwipeInProgress = true;
                     goToSlide("next");
+                } else if (touchX - touchStartX > swipeThreshold) {
+                    // Swipe left
+                    isSwipeInProgress = true;
+                    goToSlide("prev");
                 }
             }
         }
@@ -207,9 +210,9 @@ function scrollToBottom() {
             let newIndex;
 
             if (direction === "next") {
-                newIndex = (activeIndex - 1 + navigationButtons.length) % navigationButtons.length;
-            } else {
                 newIndex = (activeIndex + 1) % navigationButtons.length;
+            } else {
+                newIndex = (activeIndex - 1 + navigationButtons.length) % navigationButtons.length;
             }
 
             navigateToSlide(newIndex);

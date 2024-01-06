@@ -161,6 +161,78 @@ function scrollToBottom() {
         /*End of Test*/
 
 
+        
+        /*Test 2 Start*/
+
+
+        const navigationButtons = document.querySelectorAll(".nav-btn");
+const videoSlides = document.querySelectorAll(".video-slide");
+const contentSections = document.querySelectorAll(".content");
+let touchStartX = 0;
+
+// Function to handle touch start
+function handleTouchStart(event) {
+    touchStartX = event.touches[0].clientX;
+}
+
+// Function to handle touch move
+function handleTouchMove(event) {
+    if (touchStartX - event.touches[0].clientX > 50) {
+        // Swipe left
+        goToSlide("next");
+    } else if (event.touches[0].clientX - touchStartX > 50) {
+        // Swipe right
+        goToSlide("prev");
+    }
+}
+
+// Add touch events to the document
+document.addEventListener("touchstart", handleTouchStart, false);
+document.addEventListener("touchmove", handleTouchMove, false);
+
+// Function to navigate to the next or previous slide
+function goToSlide(direction) {
+    const activeIndex = Array.from(navigationButtons).findIndex((btn) => btn.classList.contains("active"));
+    let newIndex;
+
+    if (direction === "next") {
+        newIndex = (activeIndex + 1) % navigationButtons.length;
+    } else {
+        newIndex = (activeIndex - 1 + navigationButtons.length) % navigationButtons.length;
+    }
+
+    navigateToSlide(newIndex);
+}
+
+navigationButtons.forEach((btn, i) => {
+    btn.addEventListener("click", () => {
+        navigateToSlide(i);
+    });
+});
+
+function navigateToSlide(manual) {
+    navigationButtons.forEach((btn) => {
+        btn.classList.remove("active");
+    });
+
+    videoSlides.forEach((slide) => {
+        slide.classList.remove("active");
+    });
+
+    contentSections.forEach((content) => {
+        content.classList.remove("active");
+    });
+
+    navigationButtons[manual].classList.add("active");
+    videoSlides[manual].classList.add("active");
+    contentSections[manual].classList.add("active");
+}
+
+
+
+        /*End Test 2*/
+
+
     </script>
 </body>
 </html>

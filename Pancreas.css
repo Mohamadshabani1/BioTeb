@@ -486,22 +486,22 @@ audio{
     }
 
     .menu-btn{
-        background: url(clipart3035828.png)no-repeat;
-        background-size: 30px;
-        background-position: center;
-        width: 40px;
-        height: 40px;
-        cursor: pointer;
-        transition: 0.3s ease;
-    }
+      background: url(../media/clipart3035828.png)no-repeat;
+      background-size: 30px;
+      background-position: center;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      transition: 0.3s ease;
+  }
 
-    .menu-btn.active{
-        z-index: 999;
-        background: url(Close-256.png)no-repeat;
-        background-size: 25px;
-        background-position: center;
-        transition: 0.3s ease;
-    }
+  .menu-btn.active{
+      z-index: 999;
+      background: url(../media/Close-256.png)no-repeat;
+      background-size: 25px;
+      background-position: center;
+      transition: 0.3s ease;
+  }
 
     .patho{
         font-size: 0.7em;

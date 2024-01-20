@@ -272,7 +272,7 @@ p{
     }
 
     .menu-btn{
-        background: url(icons8-menu-32.png)no-repeat;
+        background: url(../media/icons8-menu-32.png)no-repeat;
         background-size: 30px;
         background-position: center;
         width: 40px;
@@ -283,7 +283,7 @@ p{
 
     .menu-btn.active{
         z-index: 999;
-        background: url(Close-256.png)no-repeat;
+        background: url(../media/Close-256.png)no-repeat;
         background-size: 25px;
         background-position: center;
         transition: 0.3s ease;

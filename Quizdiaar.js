@@ -170,7 +170,7 @@ const timerDisplay = () => {
             clearInterval(countdown);
             displayNext();
         }
-    }, 2000);   //change 1000
+    }, 1000);   //change 1000
 };
 
 // Display quiz

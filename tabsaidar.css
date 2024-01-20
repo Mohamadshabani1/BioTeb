@@ -358,8 +358,9 @@ footer{
         box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
     }
 
+
     .menu-btn{
-        background: url(clipart3035828.png)no-repeat;
+        background: url(../media/icons8-menu-32.png)no-repeat;
         background-size: 30px;
         background-position: center;
         width: 40px;
@@ -370,7 +371,7 @@ footer{
 
     .menu-btn.active{
         z-index: 999;
-        background: url(Close-256.png)no-repeat;
+        background: url(../media/Close-256.png)no-repeat;
         background-size: 25px;
         background-position: center;
         transition: 0.3s ease;

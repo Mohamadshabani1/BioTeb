@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="homear.css">
+    <link rel="stylesheet" href="css/homear.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,14 +33,14 @@
     </header>
 
     <section class="home">
-        <video class="video-slide active" src="BioTeb-Video1.mp4" autoplay muted loop poster="BioTeb-Pic1.png"></video> <!--Untitled video - Made with Clipchamp (11).mp4-->
-        <video class="video-slide" src="BioTeb-Video2.mp4" autoplay muted loop poster="BioTeb-Pic2.png"></video>
-        <video class="video-slide" src="BioTeb-Video3.mp4" autoplay muted loop poster="BioTeb-Pic3.png"></video>
-        <video class="video-slide" src="BioTeb-Video4.mp4" autoplay muted loop poster="BioTeb-Pic4.png"></video>
+        <video class="video-slide active" src="media/BioTeb-Video1.mp4" autoplay muted loop poster="media/BioTeb-Pic1.png"></video> <!--Untitled video - Made with Clipchamp (11).mp4-->
+        <video class="video-slide" src="media/BioTeb-Video2.mp4" autoplay muted loop poster="media/BioTeb-Pic2.png"></video>
+        <video class="video-slide" src="media/BioTeb-Video3.mp4" autoplay muted loop poster="media/BioTeb-Pic3.png"></video>
+        <video class="video-slide" src="media/BioTeb-Video4.mp4" autoplay muted loop poster="media/BioTeb-Pic4.png"></video>
         <div class="content active">
             <h1>الطّب<br><span>و علم الأحياء</span></h1>
             <p>يتيح الطب فهماً عميقًا لتشخيص ومعالجة الأمراض، بينما يساهم علم الأحياء في الكشف عن أسرار تركيب الجسم وتفاعلاته. يجمع الموقع بين هذين المجالين لتوفير معلومات شاملة وموثوقة تدعم التوعية الصحية وتسهم في تطوير العلاجات الابتكارية.</p>
-            <a href="#" onclick="alert('اضغط على احدى النقاط أدناه في أسفل الصفحة؛ لاختيار قسمك الطبي المفضل , و أبحر في بحور الطِّب!')">كَيفَ أبدأ؟</a>
+            <a href="#" onclick="alert('اضغط على احدى النقاط أدناه في أسفل الصفحة أو اسحب الشاشة لليسار اذا كنت على الهاتف المحمول؛ لاختيار قسمك الطبي المفضل , و أبحر في بحور الطِّب!')">كَيفَ أبدأ؟</a>
         </div>
         <div class="content">
             <h1>علم وظائف الأعضاء<br><span> و التشريح</span></h1>
@@ -160,11 +160,9 @@ function scrollToBottom() {
 
         /*End of Test*/
 
+                /*Test 2 Start*/
 
-        
-        /*Test 2 Start*/
-
-        const navigationButtons = document.querySelectorAll(".nav-btn");
+                const navigationButtons = document.querySelectorAll(".nav-btn");
         const videoSlides = document.querySelectorAll(".video-slide");
         const contentSections = document.querySelectorAll(".content");
         let touchStartX = 0;
